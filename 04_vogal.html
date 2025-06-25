@@ -5,10 +5,18 @@
 
     //Entrada
 
+    let letra = prompt(`Informe uma letra:`);
 
     //Processamento
 
-    
+    let resultado
+
+    (letra.toUpperCase() == "A" || letra.toUpperCase() == "E" || letra.toUpperCase() == "I" || letra.toUpperCase() == "O" || letra.toUpperCase() == "U") ?
+    resultado = `${letra} é uma vogal` : 
+    resultado = `${letra} é uma consoante`;
+
     //Saída
+
+    alert(resultado);
 
 </script>

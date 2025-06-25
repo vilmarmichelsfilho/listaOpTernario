@@ -5,10 +5,18 @@
 
     //Entrada
 
+    const anoDeNascimento = Number(prompt(`Informe o ano que você nasceu:`));
 
     //Processamento
 
+    let resultado
+
+    (anoDeNascimento <= 2007) ?
+    resultado = `Você poderá votar neste ano!` :
+    resultado = `Você não poderá votar neste ano!`;
 
     //Saída
+
+    alert(resultado);
 
 </script>
