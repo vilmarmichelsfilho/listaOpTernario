@@ -9,10 +9,21 @@
 
     //Entrada
 
+    const porte = prompt(`Insira o porte do seu cachorro(pequeno, médio, grande):`);
+    const idade = Number(prompt(`Insira a idade do seu cachorro;`));
 
     //Processamento
 
+    let idadeHumana
+
+    (porte.toLowerCase() == "grande") ?
+    idadeHumana = `Seu cachorro tem o equivalente de ${idade * 7} anos em idade humana` : (porte.toLowerCase() == "médio") ?
+    idadeHumana = `Seu cachorro tem o equivalente de ${idade * 6} anos em idade humana` : (porte.toLowerCase() == "pequeno") ?
+    idadeHumana = `Seu cachorro tem o equivalente de ${idade * 5} anos em idade humana` :
+    idadeHumana = `Vocẽ não inseriu um porte válido`;
     
     //Saída
+
+    alert(idadeHumana)
 
 </script>

@@ -7,11 +7,23 @@
 
     //Entrada
 
+    const precoLitro = Number(prompt(`Insira o preço do litro do combustível:`));
+    const quantidadeLitro = Number(prompt(`Insira a quantidade de litros de combustivel usada para se descolar para o trabalho por dia:`));
+    const precoTransporte = Number(prompt(`Insira o preço do transporte público para se descolar ate o trabalho diariamente:`));
 
     //Processamento
 
-    
+    const precoParaCombustivel = (precoLitro * quantidadeLitro) * 2
+    const precoParaTransporte = precoTransporte * 2
+
+    let resposta
+
+    (precoParaTransporte < precoParaCombustivel) ?
+    resposta = `O mais barato é transporte público sendo R$ ${precoParaTransporte} por dia, enquanto o combustivel é R$ ${precoParaCombustivel} por dia` :
+    resposta = `O mais barato é o combustivel sendo R$ ${precoParaCombustivel} por dia, enquanto o transporte público é R$ ${precoParaTransporte} por dia`;
+
     //Saída
 
+    document.write(resposta)
     
 </script>

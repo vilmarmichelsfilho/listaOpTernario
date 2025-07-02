@@ -11,10 +11,21 @@
 
     //Entrada
 
+    const nota = Number(prompt(`Insira a sua nota(1 a 10):`));
 
     //Processamento
 
+    let conceito
+
+    (nota >= 9 && nota <= 10) ?
+    conceito = `Você tirou A` : (nota >= 8 && nota <= 8.9) ?
+    conceito = `Você tirou B` : (nota >= 7 && nota <= 7.9) ?
+    conceito = `Você tirou C` : (nota >= 6 && nota <= 6.9) ?
+    conceito = `Você tirou D` : 
+    conceito = `Voce tirou E`;
     
     //Saída
+
+    alert(conceito)
 
 </script>

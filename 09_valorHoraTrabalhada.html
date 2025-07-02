@@ -9,10 +9,20 @@
 
     //Entrada
 
+    const horasTrabalhadas = Number(prompt(`Informe quantas horas você trabalha semanalmente:`));
+    const recebePorHora = Number(prompt(`Informe quanto você recebe por hora:`));
 
     //Processamento
 
+    let resposta
+
+    (horasTrabalhadas <= 45) ?
+    resposta = `Seu salário semanal é de R$ ${horasTrabalhadas * recebePorHora}` : (horasTrabalhadas > 45 && horasTrabalhadas <= 60) ?
+    resposta = `Seu salário semanal é de R$ ${(horasTrabalhadas * recebePorHora) + (horasTrabalhadas * recebePorHora) * 0.2}` :
+    resposta = `Seu salário semanal é de R$ ${(horasTrabalhadas * recebePorHora) + (horasTrabalhadas * recebePorHora) * 0.3}`; 
     
     //Saída
+
+    alert(resposta)
 
 </script>
